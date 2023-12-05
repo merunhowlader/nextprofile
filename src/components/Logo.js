@@ -10,7 +10,7 @@ export const Logo = () => {
         href={"/"}
         className="w-16 h-16 bg-dark text-light flex items-center justify-center rounded-full text-2xl font-bold"
         whileHover={{
-          scale: 1.5,
+          scale: 1.2,
           backgroundColor: [
             "#121212",
             "rgba(131,58,180,1)",
@@ -22,7 +22,7 @@ export const Logo = () => {
           transition: { duration: 1, repeat: Infinity },
         }}
       >
-        CB
+        MK
       </MotionLink>
     </div>
   );
