@@ -5,7 +5,8 @@ import profilePic from "../../public/images/profile/developer-pic-1.png";
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import { LinkArrow } from "../components/Icons";
-
+import HireMe from "@/components/HireMe";
+import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
 export const index = () => {
   return <div>index</div>;
 };
@@ -48,7 +49,7 @@ export default function Home() {
                   Resume <LinkArrow className={"w-6 ml-1"} />
                 </Link>
                 <Link
-                  href="maito@merunhowlader@gmail.com"
+                  href="mailto:merunhowlader@gmail.com"
                   target={"_blank"}
                   className="ml-4 text-lg font-medium capitalize text-dark underline"
                 >
@@ -58,6 +59,14 @@ export default function Home() {
             </div>
           </div>
         </Layout>
+        <HireMe />
+        <div className="absolute right-8 bottom-8 inline-block w-24">
+          <Image
+            src={lightBulb}
+            alt="merun kanti howlader"
+            className="w-full h-auto"
+          />
+        </div>
       </main>
     </>
   );
